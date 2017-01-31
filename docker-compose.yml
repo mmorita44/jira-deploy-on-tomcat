@@ -1,0 +1,13 @@
+version: '2'
+services:
+  jira-deploy-on-tomcat: 
+    build: .
+    image: jira-deploy-on-tomcat:7.2.1
+    ports:
+      - 8080:8080
+    volumes:
+      - data-jira:/var/shdsd/application-data/jira
+
+volumes:
+  data-jira:
+    driver: local

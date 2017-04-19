@@ -1,4 +1,4 @@
-FROM tomcat:8-jre8-alpine
+FROM mmorita44/tomcat:8.5.6-jre8-alpine
 MAINTAINER Masato Morita <m.morita44@hotmail.com>
 
 # copy files.
